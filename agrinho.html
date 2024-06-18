@@ -4,97 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water's - Purificação de Água</title>
-    <style>
-        /* Estilos básicos - você pode adicionar mais estilos conforme necessário */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: #ffffff;
-            text-align: center;
-            padding: 1em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1em;
-            display: inline-block;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        section {
-            padding: 2em;
-            margin: 2em auto;
-            max-width: 800px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Water's - Purificação de Água</h1>
-        <p>O seu parceiro em água limpa e segura</p>
+        <div class="container">
+            <h1>Water's</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
-    
-    <section id="home">
-        <h2>Bem-vindo ao Water's</h2>
-        <p>Nosso compromisso é fornecer soluções avançadas para purificação de água.</p>
-        <p>Descubra como podemos ajudar a melhorar a qualidade da água que você consome.</p>
-    </section>
-    
+
     <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos especialistas em tecnologias de purificação de água, com anos de experiência no setor.</p>
-        <p>Nossa missão é promover saúde e bem-estar através de água limpa e segura.</p>
+        <div class="container">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in leo auctor, sit amet ultricies risus faucibus.</p>
+        </div>
     </section>
-    
+
     <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos uma variedade de serviços para atender às suas necessidades de purificação de água:</p>
-        <ul>
-            <li>Filtragem avançada</li>
-            <li>Tratamento de água potável</li>
-            <li>Sistemas de osmose reversa</li>
-            <li>Manutenção de sistemas de purificação</li>
-        </ul>
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Purificação de água para residências</li>
+                <li>Filtros de água industriais</li>
+                <li>Sistemas de osmose reversa</li>
+            </ul>
+        </div>
     </section>
-    
+
     <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Estamos prontos para ajudar. Entre em contato conosco para mais informações:</p>
-        <p>Telefone: (XX) XXXX-XXXX<br>
-        Email: contato@waters.com</p>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2024 Water's - Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Water's - Todos os direitos reservados.</p>
+        </div>
     </footer>
-    
 </body>
 </html>
-
